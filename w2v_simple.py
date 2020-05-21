@@ -21,8 +21,8 @@ def get_embedding(word):
         return np.zeros(150).tolist()
 
 
-train = read_data('data/train.txt')
-test = read_data('data/test.txt')
+train = read_data('data/collection_3/train.txt')
+test = read_data('data/collection_3/test.txt')
 
 train['emb'] = train['word'].apply(lambda x: get_embedding(x))
 test['emb'] = test['word'].apply(lambda x: get_embedding(x))
