@@ -8,7 +8,7 @@ model = gensim.models.KeyedVectors.load_word2vec_format('all.bin', binary=True)
 
 
 def read_data(file):
-    with open(file) as f:
+    with open(file, encoding='utf8') as f:
         sentences = [sentence.split('\n') for sentence in f.read().split('\n\n')]
         df = pd.DataFrame([line.split() for sentence in sentences for line in sentence], columns=['word', 'tag'])
     return df
@@ -21,8 +21,8 @@ def get_embedding(word):
         return np.zeros(150).tolist()
 
 
-train = read_data('data/collection_3/train.txt')
-test = read_data('data/collection_3/test.txt')
+train = read_data('data/collection3_2/train.txt')
+test = read_data('data/collection3_2/test.txt')
 
 train['emb'] = train['word'].apply(lambda x: get_embedding(x))
 test['emb'] = test['word'].apply(lambda x: get_embedding(x))
