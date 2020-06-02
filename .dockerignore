@@ -1,0 +1,11 @@
+**
+*
+
+!demo/main.py
+!demo/demo-site/dist
+!ner/
+!Demo.Dockerfile
+!emb100.bin
+!ner.json
+!requirements.txt
+!collect3

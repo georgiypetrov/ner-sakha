@@ -1,7 +1,7 @@
 {
   "dataset_reader": {
     "class_name": "conll2003_reader",
-    "data_path": "data/collect3",
+    "data_path": "collect3",
     "dataset_name": "collection_rus",
     "provide_pos": false
   },
@@ -69,7 +69,7 @@
         "id": "embedder",
         "class_name": "fasttext",
         "pad_zero": true,
-        "load_path": "data/emb100.bin",
+        "load_path": "./emb100.bin",
         "out": ["x_emb"]
       },
       {
@@ -159,8 +159,8 @@
   "metadata": {
     "variables": {
       "ROOT_PATH": "~/.deeppavlov",
-      "MODELS_PATH": "data/ner",
-      "NER_PATH": "data/ner"
+      "MODELS_PATH": "./ner",
+      "NER_PATH": "./ner"
     },
     "requirements": [
       "{DEEPPAVLOV_PATH}/requirements/fasttext.txt",
