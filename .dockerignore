@@ -3,6 +3,7 @@
 
 !demo/main.py
 !demo-site/dist
+!demo-site/Dockerfile
 !ner/
 !Demo.Dockerfile
 !emb100.bin
