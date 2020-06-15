@@ -8,9 +8,9 @@ class Text(BaseModel):
     text: str
 
 
-model = build_model('ner.json')
-
 app = FastAPI()
+
+model = build_model('ner.json')
 
 app.add_middleware(
     CORSMiddleware,

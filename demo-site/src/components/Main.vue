@@ -33,7 +33,7 @@
                     alert('Заполните все поля!')
                     return
                 }
-                this.axios.post('http://84.201.168.134:8000/', {
+                this.axios.post('http://sakhaner.ru:8000/', {
                     text: this.$data.text
                 }).then((response) => {
                     this.$data.results.push(response.data)

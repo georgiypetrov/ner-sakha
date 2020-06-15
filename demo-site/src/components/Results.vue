@@ -1,6 +1,6 @@
 <template>
     <div class="results row col-12">
-        <Result v-for="(result, index) in results" v-bind:key="index" v-bind:result="result">
+        <Result v-for="(result, index) in results.slice().reverse()" v-bind:key="index" v-bind:result="result">
         </Result>
     </div>
 </template>
