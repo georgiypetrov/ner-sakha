@@ -1,7 +1,7 @@
 {
   "dataset_reader": {
     "class_name": "conll2003_reader",
-    "data_path": "collect3",
+    "data_path": "data/collect3",
     "dataset_name": "collection_rus",
     "provide_pos": false
   },
@@ -118,7 +118,7 @@
         "top_dropout": true,
         "intra_layer_dropout": true,
         "l2_reg": 0,
-        "learning_rate": 1e-2,
+        "learning_rate": 1e-3,
         "dropout_keep_prob": 0.7
       },
       {
@@ -132,7 +132,7 @@
   },
   "train": {
     "epochs": 100,
-    "batch_size": 64,
+    "batch_size": 32,
 
     "metrics": [
       {

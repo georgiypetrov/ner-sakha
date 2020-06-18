@@ -1,2 +1,2 @@
-model_checkpoint_path: "ner/model"
-all_model_checkpoint_paths: "ner/model"
+model_checkpoint_path: "C:\\Users\\petro\\PycharmProjects\\ner-sakha\\ner\\model"
+all_model_checkpoint_paths: "C:\\Users\\petro\\PycharmProjects\\ner-sakha\\ner\\model"
