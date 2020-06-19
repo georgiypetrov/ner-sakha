@@ -1,6 +1,9 @@
 <template>
     <b-container id="app" class="container">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="allerria">
+        <meta name="description" content="sakha-ner">
+        <title>Sakha NER</title>
         <Title></Title>
         <Description></Description>
         <Main></Main>
